@@ -6,6 +6,7 @@ import HackerRoom from "../_components/HackerRoom";
 import CanvasLoader from "../_components/CanvasLoader";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "@/constants";
+import Target from "../_components/Target";
 
 const Hero = () => {
   // Use Leva to position 3D object and positioning values manually
@@ -53,7 +54,10 @@ const Hero = () => {
               scale={sizes.deskScale}
             />
 
-            <group></group>
+            <group>
+              <Target position={sizes.targetPosition} />
+            </group>
+
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
