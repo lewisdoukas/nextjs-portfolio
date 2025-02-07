@@ -1,10 +1,21 @@
 "use client";
+import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
 const NavItems = () => {
-  return <ul className="nav-ul">{[]}</ul>;
+  return (
+    <ul className="nav-ul">
+      {navLinks.map(({ id, href, name }) => (
+        <li key={id} className="nav-li">
+          <Link href={href} className="nav-li_a">
+            {name}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
 };
 
 const NavBar = () => {
@@ -40,6 +51,12 @@ const NavBar = () => {
             <NavItems />
           </nav>
         </div>
+      </div>
+
+      <div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
+        <nav className="p-5">
+          <NavItems />
+        </nav>
       </div>
     </header>
   );
