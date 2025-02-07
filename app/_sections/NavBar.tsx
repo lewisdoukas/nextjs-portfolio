@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
+const NavItems = () => {
+  return <ul className="nav-ul">{[]}</ul>;
+};
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(true);
 
@@ -31,6 +35,10 @@ const NavBar = () => {
               height={24}
             />
           </button>
+
+          <nav className="sm:flex hidden">
+            <NavItems />
+          </nav>
         </div>
       </div>
     </header>
