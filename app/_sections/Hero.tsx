@@ -7,6 +7,9 @@ import CanvasLoader from "../_components/CanvasLoader";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "@/constants";
 import Target from "../_components/Target";
+import HeroCamera from "../_components/HeroCamera";
+import Link from "next/link";
+import Button from "../_components/Button";
 
 const Hero = () => {
   // Use Leva to position 3D object and positioning values manually
@@ -48,11 +51,14 @@ const Hero = () => {
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-            <HackerRoom
-              position={sizes.deskPosition}
-              rotation={[0, -Math.PI, 0]}
-              scale={sizes.deskScale}
-            />
+
+            <HeroCamera isMobile={isMobile}>
+              <HackerRoom
+                position={sizes.deskPosition}
+                rotation={[0, -Math.PI, 0]}
+                scale={sizes.deskScale}
+              />
+            </HeroCamera>
 
             <group>
               <Target position={sizes.targetPosition} />
@@ -62,6 +68,16 @@ const Hero = () => {
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
         </Canvas>
+      </div>
+
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+        <Link href="#contact" className="w-fit">
+          <Button
+            name="Let's work together"
+            isBeam
+            containerClass="sm:w-fit w-full sm:min-w-96"
+          />
+        </Link>
       </div>
     </section>
   );
