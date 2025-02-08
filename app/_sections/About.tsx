@@ -1,19 +1,29 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import Globe from "react-globe.gl";
 import Button from "../_components/Button";
+import dynamic from "next/dynamic";
+
+const Earth = dynamic(
+  () => {
+    return import("../_components/Earth");
+  },
+  { ssr: false }
+);
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("doukas.lewis@gmail.com");
-    setHasCopied(true);
+    // if (typeof navig !== "undefined") {
+    //   navig.clipboard.writeText("doukas.lewis@gmail.com");
+    //   setHasCopied(true);
 
-    setTimeout(() => {
-      setHasCopied(false);
-    }, 2000);
+    //   setTimeout(() => {
+    //     setHasCopied(false);
+    //   }, 2000);
+    // }
+    console.log("TEST");
   };
 
   return (
@@ -57,24 +67,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-              <Globe
-                height={326}
-                width={326}
-                backgroundColor="rgba(0,0,0,0)"
-                showAtmosphere
-                showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[
-                  {
-                    lat: 40,
-                    lng: -100,
-                    text: "I'm here!",
-                    color: "white",
-                    size: 20,
-                  },
-                ]}
-              />
+              <Earth />
             </div>
             <div>
               <p className="grid-headtext">
