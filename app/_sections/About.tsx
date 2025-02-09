@@ -12,23 +12,9 @@ const Earth = dynamic(
 );
 
 const About = () => {
-  const [hasCopied, setHasCopied] = useState(false);
-
-  const handleCopy = () => {
-    // if (typeof navig !== "undefined") {
-    //   navig.clipboard.writeText("doukas.lewis@gmail.com");
-    //   setHasCopied(true);
-
-    //   setTimeout(() => {
-    //     setHasCopied(false);
-    //   }, 2000);
-    // }
-    console.log("TEST");
-  };
-
   return (
     <section className="c-space my-20" id="about">
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+      <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <Image
@@ -40,7 +26,14 @@ const About = () => {
             />
             <div>
               <p className="grid-headtext">Hi, I'm Lewis</p>
-              <p className="grid-subtext">Description...</p>
+              <p className="grid-subtext">
+                I'm an engineer and a skilled software developer with expertise
+                in Python, JavaScript, Pinescript and in several technologies
+                used in web development, technical analysis and geoinformatics.
+                I have experience in collaborating closely with clients to
+                create efficient, scalable and user-friendly solutions that
+                solve real-world problems.
+              </p>
             </div>
           </div>
         </div>
@@ -57,8 +50,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in Python and JavaScript/TypeScript focusing on
-                React & Next.js ecosystem.
+                I specialize in Python for data analysis & desktop
+                applications/UI and in JavaScript/TypeScript focusing on Next.js
+                & React ecosystem for scalable web applications.
               </p>
             </div>
           </div>
@@ -74,48 +68,9 @@ const About = () => {
                 I work remotely accross most timezones
               </p>
               <p className="grid-subtext">
-                I based in Greek, with remote work available.
+                I based in Greece, with remote work available.
               </p>
               <Button name="Contact me" isBeam containerClass="w-full mt-10" />
-            </div>
-          </div>
-        </div>
-
-        <div className="xl:col-span-2 xl:row-span-3">
-          <Image
-            src="/assets/grid3.png"
-            alt="grid-3"
-            width={276}
-            height={276}
-            className="w-full h-fit object-contain"
-          />
-
-          <div>
-            <p className="grid-headtext">My Passion for Coding</p>
-            <p className="grid-subtext">I like... description</p>
-          </div>
-        </div>
-
-        <div className="xl:col-span-1 xl:row-span-2">
-          <div className="grid-container">
-            <Image
-              src="/assets/grid4.png"
-              alt="grid-4"
-              width={276}
-              height={276}
-              className="w-full h-fit object-cover sm:object-top"
-            />
-
-            <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={handleCopy}>
-                <Image
-                  src={hasCopied ? "/assets/tick.svg" : "/assets/copy.svg"}
-                  alt="copy"
-                  width={24}
-                  height={24}
-                />
-              </div>
             </div>
           </div>
         </div>
