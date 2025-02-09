@@ -11,6 +11,7 @@ import HeroCamera from "../_components/HeroCamera";
 import Link from "next/link";
 import Button from "../_components/Button";
 import Rings from "../_components/Rings";
+import ReactLogo from "../_components/ReactLogo";
 
 const Hero = () => {
   // Use Leva to position 3D object and positioning values manually
@@ -65,6 +66,7 @@ const Hero = () => {
 
             <group>
               <Python position={sizes.pythonPosition} />
+              <ReactLogo position={sizes.reactLogoPosition} />
               <Rings position={sizes.ringPosition} />
             </group>
 
