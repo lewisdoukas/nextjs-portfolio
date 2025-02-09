@@ -246,6 +246,86 @@ export const myProjects = [
   },
 ];
 
+export const experiences = [
+  {
+    title: "Officer cadet",
+    company_name: "Hellenic Army Academy",
+    icon: "/assets/company/sse.png",
+    iconBg: "#0E0E10",
+    date: "Sep 2012 - Jun 2016",
+    points: [
+      "Military and academic education to become an armed forces officer.",
+      "Graduation grade 8.1/10",
+    ],
+  },
+  {
+    title: "Lieutenant of Artillery",
+    company_name: "School of Artillery",
+    icon: "/assets/company/spv.png",
+    iconBg: "#afb0b6",
+    date: "Jul 2016 - Jun 2018",
+    points: [
+      "One year of military training to obtain specialty on artillery sector.",
+      "Graduated at 4th place.",
+      "One year as a trainer of artillery's reserve officers.",
+    ],
+  },
+  {
+    title: "Artillery Commander",
+    company_name: "95th National Guard Higher Command",
+    icon: "/assets/company/adte.png",
+    iconBg: "#afb0b6",
+    date: "Jul 2018 - Sep 2019",
+    points: [
+      "Commander of artillery company.",
+      "Participating in several military exercises and managing personnel and resources.",
+    ],
+  },
+  {
+    title: "Geomatics Engineer",
+    company_name:
+      "Hellenic Military Geographical Service - School of Topography",
+    icon: "/assets/company/gys.png",
+    iconBg: "#0E0E10",
+    date: "Oct 2019 - Jan 2023",
+    points: [
+      "Studying surveying and geomatics engineering (Oct 2019 - Jun 2021).",
+      "Graduation grade 19.25/20 at 1st place.",
+      "Participating in several land surveying projects including measurements with Total Station & GPS, \
+      Geomagnetic and Gravity measurements across Greece's mainland and islands.",
+      "Officer of HMGS Geodatabase department (Jul 2021 - Jan 2023).",
+      "Working on several GIS projects using ArcGIS technologies.",
+      "Software & Web developer, creating & maintaining several data analysis & spatial tools (Python), WebGIS applications (ArcGIS JS API, OpenLayers, Leaflet) and mobile applications (React-native, Cordova).",
+    ],
+  },
+  {
+    title: "Surveyor - Geoinformatics Engineer",
+    company_name: "National Technical University of Athens",
+    icon: "/assets/company/emp.png",
+    iconBg: "#0E0E10",
+    date: "Feb 2023 - Present",
+    points: [
+      "Studying to obtain an Integrated Master degree at School of Rural, Surveying and Geoinformatics Engineering.",
+    ],
+  },
+  {
+    title: "Freelancer Developer",
+    company_name: "Fiverr",
+    icon: "/assets/company/fiverr.png",
+    iconBg: "#afb0b6",
+    date: "Feb 2023 - Present",
+    points: [
+      "Developing applications related to finance, trading and crypto currencies.",
+      "Creating automations for trading using TradingView Webhooks, Telegram posts and other social platforms.",
+      "Automate trading using several strategies, indicators, technical analysis tools and APIs.",
+      "Creating web applications related to crypto currency trading & TradingView Webhooks routing to crypto exchanges using APIs.",
+      "Creating full stack web applications using Nextjs | React, implementing features such as Authentication, Database integration and Email notifications.",
+      "Completing over 150 orders, satisfying over 60 unique clients and having over 100 5⭐️ reviews.",
+      "Check out my profile",
+    ],
+  },
+];
+
 export const calculateSizes = (
   isSmall: boolean,
   isMobile: boolean,
