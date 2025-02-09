@@ -4,9 +4,9 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-const Target = (props: any) => {
+const Python = (props: any) => {
   const targetRef = useRef();
-  const { scene } = useGLTF("/models/target.gltf");
+  const { scene } = useGLTF("/models/python.gltf");
 
   useGSAP(() => {
     gsap.to(targetRef.current?.position, {
@@ -18,10 +18,10 @@ const Target = (props: any) => {
   });
 
   return (
-    <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]}>
+    <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={0.5}>
       <primitive object={scene} />
     </mesh>
   );
 };
 
-export default Target;
+export default Python;

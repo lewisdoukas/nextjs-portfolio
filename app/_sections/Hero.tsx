@@ -6,10 +6,11 @@ import HackerRoom from "../_components/HackerRoom";
 import CanvasLoader from "../_components/CanvasLoader";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "@/constants";
-import Target from "../_components/Target";
+import Python from "../_components/Python";
 import HeroCamera from "../_components/HeroCamera";
 import Link from "next/link";
 import Button from "../_components/Button";
+import Rings from "../_components/Rings";
 
 const Hero = () => {
   // Use Leva to position 3D object and positioning values manually
@@ -63,7 +64,8 @@ const Hero = () => {
             </HeroCamera>
 
             <group>
-              <Target position={sizes.targetPosition} />
+              <Python position={sizes.pythonPosition} />
+              <Rings position={sizes.ringPosition} />
             </group>
 
             <ambientLight intensity={1} />

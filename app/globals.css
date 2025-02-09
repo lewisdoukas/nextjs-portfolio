@@ -8,7 +8,9 @@
   scroll-behavior: smooth;
 }
 
-body {
+html,
+body,
+main {
   background: #010103;
   font-family: "General Sans", sans-serif;
 }
