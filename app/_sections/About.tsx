@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Button from "../_components/Button";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const Earth = dynamic(
   () => {
@@ -70,7 +71,13 @@ const About = () => {
               <p className="grid-subtext">
                 I based in Greece, with remote work available.
               </p>
-              <Button name="Contact me" isBeam containerClass="w-full mt-10" />
+              <Link href="#contact" className="w-fit">
+                <Button
+                  name="Contact me"
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </Link>
             </div>
           </div>
         </div>
