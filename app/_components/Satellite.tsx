@@ -20,14 +20,14 @@ const Python = (props: any) => {
         repeat: -1,
       });
 
-    gsap.to(targetRef.current.scale, {
+    gsap.to(targetRef.current?.scale, {
       x: 0.5,
       y: 0.5,
       duration: 50,
       repeat: -1,
     });
 
-    gsap.to(targetRef.current.position, {
+    gsap.to(targetRef.current?.position, {
       x: "+=3",
       y: "+=2",
       duration: 50,
