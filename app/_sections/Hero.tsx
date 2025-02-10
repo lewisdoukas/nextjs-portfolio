@@ -2,16 +2,14 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera } from "@react-three/drei";
-import HackerRoom from "../_components/HackerRoom";
+import EarthMoon from "../_components/EarthMoon";
 import CanvasLoader from "../_components/CanvasLoader";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "@/constants";
-import Python from "../_components/Python";
 import HeroCamera from "../_components/HeroCamera";
 import Link from "next/link";
 import Button from "../_components/Button";
-import Rings from "../_components/Rings";
-import ReactLogo from "../_components/ReactLogo";
+import Satellite from "../_components/Satellite";
 
 const Hero = () => {
   // Use Leva to position 3D object and positioning values manually
@@ -57,20 +55,18 @@ const Hero = () => {
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
 
             <HeroCamera isMobile={isMobile}>
-              <HackerRoom
-                position={sizes.deskPosition}
-                rotation={[0, -Math.PI, 0]}
-                scale={sizes.deskScale}
+              <EarthMoon
+              // position={sizes.deskPosition}
+              // rotation={[0, -Math.PI, 0]}
+              // scale={sizes.deskScale}
               />
             </HeroCamera>
 
             <group>
-              <Python position={sizes.pythonPosition} />
-              <ReactLogo position={sizes.reactLogoPosition} />
-              <Rings position={sizes.ringPosition} />
+              <Satellite position={sizes.satellitePosition} />
             </group>
 
-            <ambientLight intensity={1} />
+            <ambientLight intensity={5} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
         </Canvas>

@@ -337,36 +337,13 @@ export const calculateSizes = (
   isTablet: boolean
 ) => {
   return {
-    deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-    deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-    ringPosition: isSmall
-      ? [9, -9, 0]
+    satellitePosition: isSmall
+      ? [-1, -1, 0]
       : isMobile
-      ? [14, -5, 0]
+      ? [-1, -1, 0]
       : isTablet
-      ? [17, -5, 0]
-      : [17, -8, 0],
-    reactLogoPosition: isSmall
-      ? [3, 4, 0]
-      : isMobile
-      ? [5, 4, 0]
-      : isTablet
-      ? [5, 4, 0]
-      : [12, 3, 0],
-    lightningPosition: isSmall
-      ? [-5, 7, 0]
-      : isMobile
-      ? [-10, 10, 0]
-      : isTablet
-      ? [-12, 10, 0]
-      : [-24, 10, 0],
-    pythonPosition: isSmall
-      ? [-7, -7, -10]
-      : isMobile
-      ? [-11, -7, -10]
-      : isTablet
-      ? [-13, -4, -10]
-      : [-15, -10, -10],
+      ? [-1, -1, 0]
+      : [-1, -1, 0],
   };
 };
 
