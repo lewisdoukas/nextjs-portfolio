@@ -75,20 +75,22 @@ const Projects = () => {
               ))}
             </div>
 
-            <Link
-              href={currentProject.href}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 cursor-pointer text-white-600"
-            >
-              <p>Check Live Site</p>
-              <Image
-                src="/assets/arrow-up.png"
-                alt="arrow"
-                height={12}
-                width={12}
-              />
-            </Link>
+            {currentProject.href && (
+              <Link
+                href={currentProject.href}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 cursor-pointer text-white-600"
+              >
+                <p>Check Live Site</p>
+                <Image
+                  src="/assets/arrow-up.png"
+                  alt="arrow"
+                  height={12}
+                  width={12}
+                />
+              </Link>
+            )}
           </div>
 
           <div className="flex justify-between items-center mt-7">
