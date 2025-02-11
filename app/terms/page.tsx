@@ -155,9 +155,9 @@ const TermsPage = () => {
 };
 
 export const metadata: Metadata = {
-  title: "Terms of Service - Nina Dollis | Psychologist",
+  title: "Terms of Service",
   description:
-    "This page lists the terms governing the service of the office website.",
+    "This page lists the terms governing the service of this website.",
 };
 
 export default TermsPage;

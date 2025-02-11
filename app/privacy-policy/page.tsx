@@ -76,7 +76,7 @@ const PrivacyPolicyPage = () => {
 };
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Nina Dollis | Psychologist",
+  title: "Privacy Policy",
   description:
     "On this page you can find information about our privacy policy and GDPR compliance.",
 };
