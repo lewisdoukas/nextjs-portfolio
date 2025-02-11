@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "./_sections/NavBar";
 import { jsonLdSchema } from "./jsonldSchema";
+import toast, { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: {
@@ -35,6 +36,7 @@ export default function RootLayout({
           <NavBar />
           {children}
         </main>
+        <Toaster />
       </body>
     </html>
   );

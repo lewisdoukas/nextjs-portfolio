@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const formRef = useRef();
@@ -43,9 +44,14 @@ const Contact = () => {
         email: "",
         message: "",
       });
+
+      toast("Thanks for contact me!", {
+        icon: "👏",
+      });
     } catch (error: any) {
       setLoading(false);
       console.log(error);
+      toast.error("Oops, that didn't work.");
     }
   };
 
