@@ -1,5 +1,6 @@
 import { clientReviews } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Clients = () => {
@@ -44,6 +45,23 @@ const Clients = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="flex justify-end items-center mt-2">
+        <Link
+          href="https://www.fiverr.com/lewisdoukas?public_mode=true"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-2 cursor-pointer text-white-600 hover:text-white"
+        >
+          <p>See more reviews</p>
+          <Image
+            src="/assets/arrow-up.png"
+            alt="arrow"
+            height={12}
+            width={12}
+          />
+        </Link>
       </div>
     </section>
   );

@@ -24,35 +24,36 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: "Emily Johnson",
-    position: "Marketing Director at GreenLeaf",
+    name: "Seba",
+    position: "Client from Poland",
     img: "/assets/review1.png",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Lewis is a top-notch python developer! His professionalism and attention to details are outstanding. Working with him was pure pleasure thanks to his superb openmindness and quick responses. Even requested tasks pure out of the box were accomplished in every detail. Highly recommend! 🙌",
   },
   {
     id: 2,
-    name: "Mark Rogers",
-    position: "Founder of TechGear Shop",
+    name: "Saifam",
+    position: "Client from United Arab Emirates",
     img: "/assets/review2.png",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+      "Honestly Lewis is the best person to go to. He delivered the bot earlier than expected and when there were some technical issues, he was able to join zoom calls and spend lots of his time to help fix those issues. All in all the best person I have worked with on this app.",
   },
+
   {
     id: 3,
-    name: "John Dohsas",
-    position: "Project Manager at UrbanTech ",
+    name: "Mertcan Meric",
+    position: "Client from Germany",
     img: "/assets/review3.png",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Lewis was very engaged to find the perfect solution for my idees, so he explained me different possibilities with their pros and cons and gave me some kind of advice which solution seems the best for my idees. It was great to work with Lewis and I'm happy to continue working with him for coming projects.",
   },
   {
     id: 4,
-    name: "Ether Smith",
-    position: "CEO of BrightStar Enterprises",
+    name: "Chacho",
+    position: "Client from Philippines",
     img: "/assets/review4.png",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+      "Really awesome to work with this very good Dev. He is indeed an expert on making not only Trading Bots but in pinescript. He really is a patient and very professional person. Woul love to work with him in the future. Highly recommended!!!",
   },
 ];
 
