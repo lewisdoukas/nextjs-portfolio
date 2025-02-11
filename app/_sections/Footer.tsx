@@ -10,7 +10,10 @@ const Footer = () => {
           Terms & Conditions
         </Link>
         <p>|</p>
-        <Link className="hover:text-white-600 transition-colors" href="/terms">
+        <Link
+          className="hover:text-white-600 transition-colors"
+          href="/privacy-policy"
+        >
           Privacy Policy
         </Link>
       </div>

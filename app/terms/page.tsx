@@ -3,7 +3,7 @@ import BackLink from "../_components/BackLink";
 
 const TermsPage = () => {
   return (
-    <div className="min-h-screen flex flex-col w-full p-6 gap-6 items-center justify-start text-brand-600 text-start">
+    <div className="min-h-screen mt-20 flex flex-col w-full p-6 gap-6 items-center justify-start text-brand-600 text-start">
       <section className="w-full">
         <h1 className="text-brand-700 font-bold text-xl mb-6 text-white-600">
           TERMS OF SERVICE
@@ -149,7 +149,7 @@ const TermsPage = () => {
         </div>
       </section>
 
-      <BackLink label="Back to Home" path="/en/" />
+      <BackLink label="Back to Home" path="/" />
     </div>
   );
 };
