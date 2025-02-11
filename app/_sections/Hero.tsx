@@ -39,7 +39,7 @@ const Hero = () => {
   return (
     <section className="min-h-screen w-full flex-col relative">
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space">
-        <h1 className="hero_tag sm:text-3xl text-2x text-white text-center font-generalsans">
+        <h1 className="mt-5 md:mt-0 hero_tag sm:text-3xl text-2x text-white text-center font-generalsans">
           Hi, I am <span className="text-gray_gradient">Lewis</span>
           <span className="waving-hand ms-2">👋</span>
         </h1>
