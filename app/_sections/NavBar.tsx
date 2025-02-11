@@ -29,8 +29,15 @@ const NavBar = () => {
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <Link
             href="/"
-            className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
+            className="flex items-center gap-4 text-neutral-400 font-bold text-xl hover:text-white transition-colors"
           >
+            <Image
+              src="/assets/ilias.jpg"
+              width={56}
+              height={56}
+              alt="logo"
+              className="object-contain rounded-full gray-gradient p-[1px]"
+            />
             Lewis Doukas
           </Link>
 
