@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "./_sections/NavBar";
+import { jsonLdSchema } from "./jsonldSchema";
 
 export const metadata: Metadata = {
   title: {
@@ -26,6 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
+        />
         <main className="max-w-7xl mx-auto">
           <NavBar />
           {children}
