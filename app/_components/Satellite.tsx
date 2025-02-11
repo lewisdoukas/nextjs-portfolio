@@ -3,9 +3,10 @@ import { useGLTF } from "@react-three/drei";
 import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Mesh } from "three";
 
 const Python = (props: any) => {
-  const targetRef = useRef();
+  const targetRef = useRef<Mesh>(null!);
   const { scene } = useGLTF("/models/landsat.gltf");
 
   useGSAP(() => {

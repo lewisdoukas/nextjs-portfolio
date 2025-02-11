@@ -11,9 +11,10 @@ import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Mesh } from "three";
 
 const EarthMoon = (props: any) => {
-  const group = useRef();
+  const group = useRef<Mesh>(null!);
   const { nodes, materials } = useGLTF("/models/earth.glb");
 
   useGSAP(() => {
@@ -46,6 +47,7 @@ const EarthMoon = (props: any) => {
                     name="Earth_01_-_Default_0"
                     castShadow
                     receiveShadow
+                    //@ts-ignore
                     geometry={nodes["Earth_01_-_Default_0"].geometry}
                     material={materials["01_-_Default"]}
                   />
@@ -59,6 +61,7 @@ const EarthMoon = (props: any) => {
                     name="Moon_02_-_Default_0"
                     castShadow
                     receiveShadow
+                    //@ts-ignore
                     geometry={nodes["Moon_02_-_Default_0"].geometry}
                     material={materials["02_-_Default"]}
                   />

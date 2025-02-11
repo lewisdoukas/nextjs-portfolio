@@ -6,7 +6,6 @@ import EarthMoon from "../_components/EarthMoon";
 import CanvasLoader from "../_components/CanvasLoader";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "@/constants";
-import HeroCamera from "../_components/HeroCamera";
 import Link from "next/link";
 import Button from "../_components/Button";
 import Satellite from "../_components/Satellite";
@@ -55,13 +54,7 @@ const Hero = () => {
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
 
-            <HeroCamera isMobile={isMobile}>
-              <EarthMoon
-              // position={sizes.deskPosition}
-              // rotation={[0, -Math.PI, 0]}
-              // scale={sizes.deskScale}
-              />
-            </HeroCamera>
+            <EarthMoon scale={isMobile ? 1 : 1.3} />
 
             <group>
               <Satellite position={sizes.satellitePosition} />
