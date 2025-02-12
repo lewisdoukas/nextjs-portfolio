@@ -60,7 +60,7 @@ export const clientReviews = [
 export const myProjects = [
   {
     title: "Lawyer business web application",
-    desc: "Web application which allows potential clients to contact with the office, schedule online appointments and track the progress of their cases. It also serves as a CMS enabling business administrators to manage all the necessary information about their clients and cases.",
+    desc: "Web application which allows potential clients to contact with the office, schedule online appointments and track the progress of their cases. It also serves as a CMS enabling business administrators to manage necessary information about their clients and cases.",
     subdesc:
       "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript and Appwrite, for optimal performance and scalability.",
     href: "https://paulidoulaw.com",
@@ -245,9 +245,9 @@ export const myProjects = [
   },
   {
     title: "DkSolver - Gravity Anomaly Network Adjustment",
-    desc: "Desktop application which allows users to adjust a free-air gravity anomaly network using linear regression techniques. It implements hypothesis testing using F-test, exports relevant tables & reports and generates a web-map showing the location and adjusted values of network's stations.",
+    desc: "Desktop application which allows engineers to adjust a free-air gravity anomaly network using linear regression techniques. It implements hypothesis testing using F-test, exports relevant tables & reports. Moreover, it generates web maps to visualise the location and adjusted values of network's stations.",
     subdesc:
-      "It was developed for the porpuse of a graduation project on regression analysis. It combines both programming and statistic techniques as well as web map visualization.",
+      "It was developed using Python, Pandas, GeoPandas, Tkinter and Leaflet for the purpose of a graduation project on regression analysis. It combines both programming and statistic techniques as well as web map visualization.",
     href: null,
     texture: "/textures/project/project6.mp4",
     logo: "/assets/project-logo6.png",
