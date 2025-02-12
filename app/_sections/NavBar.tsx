@@ -29,7 +29,7 @@ const NavBar = () => {
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <Link
             href="/"
-            className="flex items-center gap-4 text-neutral-400 font-bold text-xl hover:text-white transition-colors"
+            className="flex items-center gap-4 text-gray_gradient font-bold text-xl hover:text-white transition-colors"
           >
             <Image
               src="/assets/ilias.jpg"

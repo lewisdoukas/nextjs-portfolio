@@ -44,7 +44,7 @@ const Hero = () => {
           <span className="waving-hand ms-2">👋</span>
         </h1>
         <p className="hero_tag text-gray_gradient">
-          Geoinformatics Engineer & Next.js | React Developer
+          Geomatics Engineer & Next.js | React Developer
         </p>
       </div>
 
