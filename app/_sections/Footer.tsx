@@ -46,7 +46,7 @@ const Footer = () => {
           />
         </Link>
         <Link
-          href="https://www.linkedin.com/in/lewis-doukas-a68695350/"
+          href="https://www.linkedin.com/in/lewisdoukas/"
           target="_blank"
           className="social-icon"
         >

@@ -10,7 +10,7 @@ export const jsonLdSchema = {
     "https://twitter.com/DoukasLewis",
     "https://github.com/lewisdoukas",
     "https://lewisdoukas.com",
-    "https://www.linkedin.com/in/lewis-doukas-a68695350/",
+    "https://www.linkedin.com/in/lewisdoukas/",
   ],
   jobTitle: "Web developer | Python | Next.js | React",
 };
