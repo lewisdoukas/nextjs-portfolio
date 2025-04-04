@@ -317,6 +317,33 @@ export const myProjects = [
       },
     ],
   },
+  {
+    title: "Whisk",
+    desc: "Enterprise trading platform for desktop. It supports both manual and automate trading based on the most popular indicators for 100+ combinations of conditions, risk management and history logging.",
+    subdesc:
+      "Reliable solution for traders who want to automate highly customizable strategies for crypto.",
+    href: null,
+    texture: "/textures/project/project8.mp4",
+    logo: "/assets/project-logo8.png",
+    logoStyle: {
+      backgroundColor: "#13202F",
+      border: "0.2px solid #17293E",
+      boxShadow: "0px 0px 60px 0px #2F6DB54D",
+    },
+    spotlight: "/assets/spotlight2.png",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "/assets/tech/python.png",
+      },
+      {
+        id: 2,
+        name: "Pandas",
+        path: "/assets/tech/pandas.png",
+      },
+    ],
+  },
 ];
 
 export const experiences = [
